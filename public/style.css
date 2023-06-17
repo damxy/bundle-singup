@@ -1,0 +1,480 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:400,500,600,700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+html,
+body {
+  display: grid;
+  height: 100%;
+  place-items: center;
+  text-align: center;
+  background: #f2f2f2;
+}
+
+input[type="number"]{
+  -moz-appearance: textfield;
+}
+
+input[type="number"]::-webkit-outer-spin-button,
+input[type="number"]::-webkit-inner-spin-button{
+  -webkit-appearance: none;
+}
+
+.container {
+  background: #fff;
+  padding: 20px 30px;
+  height: 1600px;
+  border-radius: 5px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  position: relative; top: 85px;
+}
+.container header {
+  padding-top: 5px;
+  font-size: 25px;
+  font-weight: 600;
+  line-height: 33px;
+}
+.container form {
+  margin: 5px 8px;
+}
+
+.container form .fields {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  margin: 15px 0;
+  position: relative;
+}
+form .fields input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid lightgrey;
+  padding-left: 15px;
+  outline: none;
+  border-radius: 5px;
+  font-size: 17px;
+  transition: all 0.3s;
+}
+form .fields input::placeholder {
+  font-size: 16px;
+}
+.container form .field {
+  width: 100%;
+  height: 45px;
+  display: flex;
+  margin: 15px 0;
+  position: relative;
+}
+form .field input {
+  width: 100%;
+  height: 100%;
+  border: 1px solid lightgrey;
+  padding-left: 15px;
+  outline: none;
+  border-radius: 5px;
+  font-size: 17px;
+  transition: all 0.3s;
+}
+form .field input::placeholder {
+  font-size: 16px;
+}
+form .field input:focus {
+  border-color: #6e2db3;
+  box-shadow: inset 0 0 5px #d9b8fc;
+}
+form .field .show {
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 14px;
+  font-weight: 600;
+  user-select: none;
+  cursor: pointer;
+  display: none;
+}
+form .field .show.active {
+  color: #d9b8fc;
+}
+
+.wrapper p {
+  position: relative;
+  left: 10px;
+}
+.fa-solid {
+  position: relative;
+  top: 13px;
+  right: 10px;
+  color: #6b6b6b;
+  font-size: 22px;
+}
+
+.fa-credit-card {
+  position: relative;
+  top: 3px;
+  right: 30px;
+  color: rgb(107, 107, 107);
+  font-size: 22px;
+}
+
+.fa-sharp {
+  font-size: 22px;
+  color: black;
+  position: relative;
+  top: 2.5px;
+  left: 150px;
+}
+
+.wrapper {
+  background: #fff;
+  width: 375.5px;
+  height: 56px;
+  border: rgb(180, 178, 178) solid 0.1px;
+  text-align: left;
+  padding: 0 30px;
+  font-weight: lighter;
+  color: #474747;
+  border-radius: 1px;
+}
+
+.vc {
+  width: 45px;
+  position: relative;
+  bottom: 10px;
+}
+
+.mc {
+  width: 60px;
+  position: relative;
+  bottom: 22px;
+}
+
+.container-2 {
+  border: rgb(180, 178, 178) solid 0.1px;
+  width: 376px;
+  height: 535px;
+  margin-left: 0px;
+  position: relative;
+  left: -31px;
+  top: -23.5px;
+}
+
+.container-2 input::placeholder {
+  font-size: 30px;
+}
+
+.warning {
+  color: rgb(255, 0, 0);
+  opacity: 60%;
+  font-size: x-small;
+}
+
+.container-2 p {
+  position: relative;
+  top: 7px;
+  left: -1px;
+  justify-content: center;
+  text-align: center;
+}
+
+
+.date{
+  width: 180px;
+  height: 33px;
+  border: rgb(180, 178, 178) solid 0.5px;
+  display: flex;
+  margin: 5px 0;
+  padding-left: 10px;
+  outline: none;
+  font-size: 17px;
+  transition: all 0.3s;
+}
+
+.dateyear{
+  width: 100px;
+  height: 33px;
+  border: rgb(180, 178, 178) solid 0.5px;
+  display: flex;
+  margin: 5px 0;
+  padding-left: 10px;
+  outline: none;
+  font-size: 17px;
+  transition: all 0.3s;
+  position: relative; top: -38px; left: 200px;
+}
+
+.card {
+  width: 300px;
+  height: 33px;
+  display: flex;
+  margin: 5px 0;
+  position: relative;
+  border: rgb(180, 178, 178) solid 0.5px;
+  outline: none;
+  padding: 0 10px;
+}
+
+.cardnum {
+  padding: 0 20px;
+  margin: 25px 0;
+}
+
+span {
+  opacity: 50%;
+  font-size: 65%;
+}
+
+.container-keycode {
+  border: #474747 solid 0.5px;
+  position: relative;
+  top: 20px;
+  height: 186px;
+  box-shadow: rgb(180, 178, 178) 2px 2px 9px;
+}
+
+.container-keycode input {
+  position: relative;
+  top: 18px;
+  left: 20px;
+  height: 40px;
+  width: 250px;
+  outline: none;
+  border-radius: 1px;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0px;
+}
+
+.container-keycode input::placeholder {
+  font-size: 18px;
+  position: relative;
+  top: 5px;
+  left: 10px;
+}
+
+.container-keycode header {
+  font-size: 25px;
+  color: rgb(8, 8, 8);
+  position: relative;
+  left: 20px;
+}
+
+.container-keycode p {
+  color: rgb(255, 0, 0);
+  opacity: 60%;
+  font-size: x-small;
+}
+
+.copy {
+  width: 20px;
+  position: relative;
+  top: 27px;
+  left: 30px;
+}
+
+#button {
+  font-size: 15px;
+  outline: 0;
+  background: #019f55;
+  color: #fff;
+  font-weight: 300;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 2px;
+  cursor: pointer;
+  padding: 16px 26px;
+  height: 30px;
+  width: 120px;
+  border-radius: 2px;
+  margin-top: 32px;
+  position: relative;
+  left: 25px;
+}
+
+#button:hover {
+  color: white;
+  background: rgb(0, 0, 0);
+}
+
+.container-3 {
+  border: rgb(10, 10, 10) solid 0.1px;
+  width: 375px;
+  height: 220px;
+  margin-left: 0px;
+  position: relative;
+  top: 280px;
+  right: 25px;
+  border-radius: 5px;
+  box-shadow: rgb(180, 178, 178) 5px 5px;
+}
+
+.container-3 header {
+  padding-top: 5px;
+  padding-left: 10px;
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 33px;
+  color: black;
+}
+
+form .field3 input {
+  width: 320px;
+  height: 38px;
+  border: 1px solid lightgrey;
+  padding-left: 15px;
+  outline: none;
+  border-radius: 5px;
+  font-size: 17px;
+  position: relative;
+  top: 20px;
+  left: 40px;
+  transition: all 0.3s;
+}
+
+.input-data {
+  position: relative;
+  top: 30px;
+  left: 30px;
+  border: none;
+}
+
+.inputs {
+  border: none;
+  border-bottom: solid 2px silver;
+  outline: none;
+  font-size: 17px;
+  position: relative;
+  top: 10px;
+  left: 9px;
+}
+
+.input-data input::placeholder {
+  font-size: 15px;
+}
+
+.input-data2 input::placeholder {
+  font-size: 15px;
+}
+
+.input-data label {
+  position: relative;
+  top: -13px;
+  right: 214px;
+}
+
+.input-data2 .inputs2 {
+  border: none;
+  border-bottom: solid 2px silver;
+  outline: none;
+  font-size: 17px;
+  position: relative;
+  top: 65px;
+  left: 36px;
+}
+
+.input-data2 label {
+  position: relative;
+  top: 63px;
+  right: 180px;
+}
+
+.rmc {
+  position: relative;
+  top: 50px;
+  left: 50px;
+}
+
+footer {
+  position: relative;
+  top: -100px;
+}
+
+#term {
+  font-size: x-small;
+}
+
+#insured {
+  width: 25px;
+}
+
+#occ {
+  width: 20px;
+}
+
+#buttons {
+  width: 100%;
+  height: 45px;
+  margin: 3px 0 10px 0;
+  border: none;
+  outline: none;
+  background: #27ae60;
+  border-radius: 5px;
+  color: #fff;
+  font-size: 18px;
+  font-weight: 500;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  cursor: pointer;
+  opacity: 0.7;
+}
+#buttons {
+  opacity: 1;
+  transition: all 0.3s;
+}
+#buttons:hover {
+  background: rgb(33, 145, 80);
+}
+
+.move{
+  position: relative; top: -35px;
+}
+
+.passb{
+  position: relative; top:10px;
+  padding-left: 27px;
+}
+
+.userb{
+  position: relative; top: -45px;
+  
+}
+
+#CN{
+  width: 117px;
+  position: relative;
+  top: 5px;
+  left: px;
+}
+
+#ED{
+  width: 100px ;
+  position: relative;
+  top: 8px;
+}
+
+#CV{
+  width: 40px;
+  position: relative;
+  top: 2.5px;
+}
+
+#AP{
+  width: 150px;
+  position: relative;
+  top: 8px;
+}
+
+#SN{
+  width: 42px;
+  position: relative;
+  top: 3px;
+}
+
+.email{
+  width: 0.1px;
+  height: 0.1px;
+}
